@@ -1,5 +1,36 @@
+/* HTML */
+
+
+/*header*/
+.header {
+  height: 64px;
+}
+.header .container {
+  display: flex;
+}
+.logo img{
+  height: 5rem;
+  width: 5rem;
+}
+
 h2 {
   font-size: 59px;
   font-weight: bold;
   font-family: cursive;
+}
+/* Main Section */
+.main-section .container {
+  display: flex;
+}
+.main-image img{
+  width: 60%;
+}
+/* Keep-Practicing */
+.keep-practicing, .container, .offering {
+  display: flex;
+}
+/* Start-Learning */
+.start-learning .container {
+  display: flex;
+  flex-flow: wrap;
 }
