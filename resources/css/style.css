@@ -1,36 +1,104 @@
-/* HTML */
+/* Universal Styles */
 
-
+body {
+  width: 1600px;
+}
 /*header*/
 .header {
   height: 64px;
+  width: 100%;
+  padding: 0 24px;
 }
 .header .container {
-  display: flex;
+  width: 100%;
 }
+.nav-container {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav span {
+  margin-right: 16px;
+}
+.header-logo, .header-title, .nav-container{
+  padding: 24px 0;
+}
+
 .logo img{
   height: 5rem;
   width: 5rem;
 }
-
 h2 {
-  font-size: 59px;
+  font-size: 23px;
   font-weight: bold;
   font-family: cursive;
 }
 /* Main Section */
+.main-section {
+  background-color: lightgray;
+}
 .main-section .container {
   display: flex;
 }
-.main-image img{
+
+.main-section .container img, .keep-practicing .container img{
   width: 60%;
+  height: 350px;
+  margin: 32px 24px;
 }
 /* Keep-Practicing */
 .keep-practicing, .container, .offering {
-  display: flex;
+display: flex;
+}
+.keep-practicing .container .offerings {
+  
+  width: 40%;
+}
+
+.offering img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
 }
 /* Start-Learning */
 .start-learning .container {
   display: flex;
   flex-flow: wrap;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+.start-learning .container .class {
+  margin-left: 32px;
+  margin-right: 32px;
+  width: 300px;
+}
+.container .class img{
+  width: 100%;
+  height: auto;
+}
+
+/* thesis-exhibit */
+
+.thesis-exhibit .container .video {
+  width: 40%;
+  margin: 24px;
+}
+.thesis-exhibit .container video {
+  width: 500px;
+  height: auto;
+}
+.thesis-exhibit .container .articles .article {
+  display: flex;
+  width: 40%;
+}
+ .articles .article .description {
+   width: 350px;
+   justify-content: center;
+}
+.articles .article img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
 }
