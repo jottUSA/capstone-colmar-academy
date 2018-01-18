@@ -48,7 +48,12 @@ h2 {
 .cta-container {
   width: 40%
 }
-.main-section .container img,  .container .container-description img{
+.container .container-description .keep-practicing-container img{
+  width: 60%;
+  height: 350px;
+  margin: 32px 24px;
+}
+.main-section .container img{
   width: 60%;
   height: 350px;
   margin: 32px 24px;
@@ -62,21 +67,21 @@ display: flex;
 .keep-practicing-container {
   width: 60%;
 }
-
 .keep-practicing .container .container-description {
   display: flex;
 }
 .offerings {
   flex-direction: column;
 }
-
-
-
+.information {
+  width: 65%;
+}
 .offering img {
   width: 35%;
   height: auto;
   margin: 16px;
 }
+
 /* Start-Learning */
 .start-learning .container {
   display: flex;
