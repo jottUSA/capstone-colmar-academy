@@ -39,23 +39,38 @@ h2 {
 .main-section {
   background-color: lightgray;
 }
-.main-section .container {
+.main-section .container .container-description, .container, .offerings {
   display: flex;
 }
-
-.main-section .container img, .keep-practicing .container img{
+.keep-practicing .container .offerings {
+  width: 40%;
+}
+.cta-container {
+  width: 40%
+}
+.main-section .container img,  .container .container-description img{
   width: 60%;
   height: 350px;
   margin: 32px 24px;
 }
+
+
 /* Keep-Practicing */
-.keep-practicing, .container, .offering {
+.keep-practicing .container .offering {
 display: flex;
 }
-.keep-practicing .container .offerings {
-  
-  width: 40%;
+.keep-practicing-container {
+  width: 60%;
 }
+
+.keep-practicing .container .container-description {
+  display: flex;
+}
+.offerings {
+  flex-direction: column;
+}
+
+
 
 .offering img {
   width: 35%;
