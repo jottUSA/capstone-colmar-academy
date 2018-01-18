@@ -3,6 +3,19 @@
 body {
   width: 1600px;
 }
+html {
+  font-family: bitter;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: bitter;
+}
+h2 {
+  font-size: 23px;
+  font-weight: bold;
+  font-family: bitter;
+}
 /*header*/
 .header {
   height: 64px;
@@ -30,14 +43,14 @@ body {
   height: 5rem;
   width: 5rem;
 }
-h2 {
-  font-size: 23px;
-  font-weight: bold;
-  font-family: cursive;
-}
+
 /* Main Section */
 .main-section {
   background-color: lightgray;
+}
+.keep-practicing-container h2 {
+  margin-bottom: 24px;
+  text-align: left;
 }
 .main-section .container .container-description, .container, .offerings {
   display: flex;
@@ -46,12 +59,20 @@ h2 {
   width: 40%;
 }
 .cta-container {
-  width: 40%
+  width: 40%;
+  padding: 125px 0px 125px 20px;
 }
 .container .container-description .keep-practicing-container img{
   width: 60%;
   height: 350px;
   margin: 32px 24px;
+}
+.cta {
+  background-color: darkgray;
+  width: 90px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .main-section .container img{
   width: 60%;
@@ -63,6 +84,9 @@ h2 {
 /* Keep-Practicing */
 .keep-practicing .container .offering {
 display: flex;
+}
+#keep-practicing h2 {
+  margin-bottom: 24px;
 }
 .keep-practicing-container {
   width: 60%;
@@ -83,6 +107,14 @@ display: flex;
 }
 
 /* Start-Learning */
+.start-learning {
+  background-color: lightgray;
+}
+.start-learning h2, .thesis-exhibit h2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
 .start-learning .container {
   display: flex;
   flex-flow: wrap;
@@ -90,20 +122,30 @@ display: flex;
   padding-right: 72px;
 }
 .start-learning .container .class {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: 0px 32px 32px 32px;
   width: 300px;
 }
 .container .class img{
   width: 100%;
   height: auto;
 }
+.class h3 {
+  margin-top: 16px;
+}
+.class .text {
+  margin-left: 16px;
+  padding-bottom: 24px;
+}
+.class p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 
 /* thesis-exhibit */
 
 .thesis-exhibit .container .video {
-  width: 40%;
-  margin: 24px;
+  width: 60%;
+  margin: 0px 24px 24px 24px;
 }
 .thesis-exhibit .container video {
   width: 500px;
@@ -111,14 +153,17 @@ display: flex;
 }
 .thesis-exhibit .container .articles .article {
   display: flex;
-  width: 40%;
+
 }
  .articles .article .description {
    width: 350px;
-   justify-content: center;
+   text-align: justify;
 }
 .articles .article img {
   width: 35%;
   height: auto;
   margin: 16px;
+}
+.articles {
+  width: 40%;
 }
