@@ -124,8 +124,9 @@ display: flex;
 .start-learning .container {
   display: flex;
   flex-flow: wrap;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 80px;
+  padding-right: 80px;
+  justify-content: center;
 }
 .start-learning .container .class {
   margin: 0px 32px 32px 32px;
