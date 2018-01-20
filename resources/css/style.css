@@ -61,27 +61,37 @@ header .container {
 }
 .cta-container {
   width: 40%;
-  padding: 125px 0px 125px 20px;
+  padding: 10em 0px 10em 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container .container-description .keep-practicing-container img{
   width: 100%;
   height: 25em;
-  margin: 32px 24px;
+  margin: 0 24px 32px 0;
 }
 .cta {
   background-color: darkgray;
-  width: 90px;
+  width: 20em;
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.cta-container h4 {
+  margin-top: 1em;
+}
+.cta {
+  margin-top: 1.5em;
+}
+.cta span {
+  font-size: 2em;
 }
 .main-section .container img{
   width: 60%;
   height: 25em;
   margin: 32px 24px;
-
 }
-
 
 /* Keep-Practicing */
 .keep-practicing .container .offering {
@@ -93,9 +103,11 @@ display: flex;
 .keep-practicing-container {
   width: 60%;
   margin-right: 24px;
+  margin-left: 24px;
 }
 .keep-practicing .container .container-description {
   display: flex;
+  padding-top: 32px;
 }
 .offerings {
   flex-direction: column;
@@ -109,7 +121,7 @@ display: flex;
 .offering img {
   width: 35%;
   height: auto;
-  margin: 16px;
+  margin: 0 16px 16px 16px;
 }
 
 /* Start-Learning */
@@ -160,11 +172,10 @@ display: flex;
 }
 .thesis-exhibit .container .articles .article {
   display: flex;
-
 }
  .articles .article .description {
-   width: 350px;
-   text-align: justify;
+  width: 350px;
+  text-align: justify;
 }
 .articles .article img {
   width: 35%;
@@ -173,4 +184,13 @@ display: flex;
 }
 .articles {
   width: 40%;
+}
+/* footer */
+footer {
+  margin-top: 16px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
