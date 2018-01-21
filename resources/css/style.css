@@ -22,6 +22,8 @@ header {
   height: 64px;
   width: 100%;
   padding: 0 24px;
+  position: fixed;
+  background-color: white;
 }
 header .container {
   width: 100%;
@@ -112,6 +114,9 @@ display: flex;
 .offerings {
   flex-direction: column;
 }
+.offering:nth-child(3n+3) {
+  background-color: lightgray;
+}
 .information {
   width: 65%;
 }
@@ -181,6 +186,9 @@ display: flex;
   width: 35%;
   height: auto;
   margin: 16px;
+}
+.article:nth-child(0n+1) {
+  background-color: lightgray;
 }
 .articles {
   width: 40%;
