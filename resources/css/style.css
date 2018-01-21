@@ -2,19 +2,24 @@
 
 body {
   width: 1600px;
-}
-html {
   font-family: bitter;
 }
+
 h1 {
-  font-size: 30px;
+  font-size: 2.1em;
   font-weight: bold;
   font-family: bitter;
 }
 h2 {
-  font-size: 23px;
+  font-size: 1.9em;
   font-weight: bold;
   font-family: bitter;
+}
+h3, h4 {
+  font-size: 1.5em;
+}
+ h5 {
+  font-family: fantasy;
 }
 
 /*header*/
@@ -28,6 +33,13 @@ header {
 header .container {
   width: 100%;
 }
+.header-title {
+  display: flex;
+  vertical-align: middle;
+}
+.header-title:nth-child(2n+2) {
+  color: lightgray;
+}
 .nav-container {
   width: 100%;
 }
@@ -35,17 +47,21 @@ header .container {
   display: flex;
   justify-content: flex-end;
 }
+.nav:nth-child(4n+1){
+  margin-right: 25px;
+}
 .nav span {
   margin-right: 16px;
+  font-family: fantasy;
 }
 .header-logo, .header-title, .nav-container{
   padding: 24px 0;
 }
-
 .logo img{
   height: 5rem;
   width: 5rem;
 }
+
 
 /* Main Section */
 .main-section {
@@ -67,6 +83,7 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .container .container-description .keep-practicing-container img{
   width: 100%;
@@ -79,12 +96,10 @@ header .container {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
+  margin-top: 1.5em;
 }
 .cta-container h4 {
   margin-top: 1em;
-}
-.cta {
-  margin-top: 1.5em;
 }
 .cta span {
   font-size: 2em;
@@ -111,11 +126,16 @@ display: flex;
   display: flex;
   padding-top: 32px;
 }
+.keep-practicing-container span {
+  margin-top: 2em;
+  margin-bottom: 34px;
+}
 .offerings {
   flex-direction: column;
 }
 .offering:nth-child(3n+3) {
   background-color: lightgray;
+  padding-top: 16px;
 }
 .information {
   width: 65%;
@@ -128,10 +148,14 @@ display: flex;
   height: auto;
   margin: 0 16px 16px 16px;
 }
-
+.offering p, .article p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 /* Start-Learning */
 .start-learning {
   background-color: lightgray;
+  margin-top: 32px;
 }
 .start-learning h2, .thesis-exhibit h2 {
   padding-top: 32px;
@@ -201,4 +225,6 @@ footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
