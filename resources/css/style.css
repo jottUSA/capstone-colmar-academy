@@ -109,7 +109,9 @@ header .container {
   height: 25em;
   margin: 32px 24px;
 }
-
+.container-description {
+  padding-top: 4em;
+}
 /* Keep-Practicing */
 .keep-practicing .container .offering {
 display: flex;
@@ -129,6 +131,9 @@ display: flex;
 .keep-practicing-container span {
   margin-top: 2em;
   margin-bottom: 34px;
+}
+.author {
+  margin-left: 24px;
 }
 .offerings {
   flex-direction: column;
