@@ -37,7 +37,11 @@ header .container {
   display: flex;
   vertical-align: middle;
 }
-.header-title:nth-child(2n+2) {
+.header-title h5 {
+  margin-right: .3em;
+  font-size: 1.6em;
+}
+.header-title h5:nth-child(2n+2) {
   color: lightgray;
 }
 .nav-container {
@@ -50,9 +54,11 @@ header .container {
 .nav:nth-child(4n+1){
   margin-right: 25px;
 }
-.nav span {
+.nav a {
   margin-right: 16px;
   font-family: fantasy;
+  color: black;
+  text-decoration: none;
 }
 .header-logo, .header-title, .nav-container{
   padding: 24px 0;
@@ -61,8 +67,6 @@ header .container {
   height: 5rem;
   width: 5rem;
 }
-
-
 /* Main Section */
 .main-section {
   background-color: lightgray;
@@ -101,8 +105,11 @@ header .container {
 .cta-container h4 {
   margin-top: 1em;
 }
-.cta span {
+.cta a {
   font-size: 2em;
+  font-family: bitter;
+  text-decoration: none;
+  color: black;
 }
 .main-section .container img{
   width: 60%;
@@ -111,6 +118,9 @@ header .container {
 }
 .container-description {
   padding-top: 4em;
+}
+.main-section .container .container-description {
+  align-items: center;
 }
 /* Keep-Practicing */
 .keep-practicing .container .offering {
