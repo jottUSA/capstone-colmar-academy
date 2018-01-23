@@ -22,6 +22,44 @@ h3, h4 {
   font-family: fantasy;
 }
 
+/*Media Queries*/
+
+@media only screen and (max-width: 720px) {
+  .header-title h5, .nav-item a {
+    display: none;
+}
+}
+@media only screen and (max-width: 720px) {
+.main-section .container .container-description, .offerings .offering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section .container .container-description img, .keep-practicing .container .container-description img {
+  width: 100%;
+}
+.cta-container {
+  padding: 32px 16px;
+}
+}
+@media only screen and (max-width: 720px) {
+.keep-practicing-container {
+  display: none;
+}
+.keep-practicing .container .container-description {
+  justify-content: center;
+  text-align: center;
+  padding-top:16px;
+  padding-bottom: 32px;
+}
+.offering {
+transition: none;
+}
+.keep-practicing .container .container-description .offerings .offering {
+margin-top: 64px;
+}
+}
+
 /*header*/
 
 header {
@@ -31,9 +69,6 @@ header {
   position: fixed;
   background-color: white;
   z-index: 10;
-}
-header .container {
-  width: 100%;
 }
 .header-title {
   display: flex;
