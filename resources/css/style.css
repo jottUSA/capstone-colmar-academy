@@ -3,8 +3,8 @@
 body {
   width: 1600px;
   font-family: bitter;
+  max-width: 100%;
 }
-
 h1 {
   font-size: 2.1em;
   font-weight: bold;
@@ -23,6 +23,7 @@ h3, h4 {
 }
 
 /*header*/
+
 header {
   height: 64px;
   width: 100%;
@@ -44,19 +45,18 @@ header .container {
 }
 .header-title h5:nth-child(2n+2) {
   color: hsla(200, 11%, 60%, .3);
-
 }
 .nav-container {
   width: 100%;
 }
-.nav {
+nav {
   display: flex;
   justify-content: flex-end;
 }
-.nav:nth-child(4n+1){
+nav:nth-child(4n+1){
   margin-right: 25px;
 }
-.nav a {
+.nav-item a {
   margin-right: 16px;
   font-family: fantasy;
   color: black;
@@ -69,7 +69,9 @@ header .container {
   height: 5rem;
   width: 5rem;
 }
+
 /* Main Section */
+
 .main-section {
   background-color: hsla(200, 11%, 60%, .3);
 }
@@ -103,6 +105,11 @@ header .container {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: 1.5em;
+  border-radius: .5em;
+}
+.cta:hover {
+  transition: background-color 1s ease-in-out 0s;
+  background-color: gold;
 }
 .cta-container h4 {
   margin-top: 1em;
@@ -124,7 +131,9 @@ header .container {
 .main-section .container .container-description {
   align-items: center;
 }
+
 /* Keep-Practicing */
+
 .keep-practicing .container .offering {
 display: flex;
 }
@@ -157,6 +166,11 @@ display: flex;
 .information {
   width: 65%;
 }
+.offering:hover{
+  transition: height 2s ease-out 2s, font-size 100ms ease-in 0s;
+  height: 300px;
+  font-size: 1.1em;
+}
 .offering, .article {
   align-items: center;
 }
@@ -169,7 +183,9 @@ display: flex;
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
 /* Start-Learning */
+
 .start-learning {
   background-color: hsla(200, 11%, 60%, .3);
   margin-top: 32px;
@@ -193,6 +209,10 @@ display: flex;
 .container .class img{
   width: 100%;
   height: auto;
+}
+.class:hover {
+  transition: font-size 100ms ease-in 0s;
+  font-size: 1.1em;
 }
 .class h3 {
   margin-top: 16px;
