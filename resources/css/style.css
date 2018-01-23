@@ -38,7 +38,7 @@ h3, h4 {
 .main-section .container .container-description img, .keep-practicing .container .container-description img {
   width: 100%;
 }
-.cta-container {
+.container-description .cta-container {
   padding: 32px 16px;
 }
 }
@@ -52,14 +52,50 @@ h3, h4 {
   padding-top:16px;
   padding-bottom: 32px;
 }
-.offering {
-transition: none;
-}
 .keep-practicing .container .container-description .offerings .offering {
 margin-top: 64px;
+transition: none;
 }
 }
-
+@media only screen and (max-width: 720px) {
+.start-learning .container, h2 {
+  background-color: white;
+}
+.container .class .text {
+  margin-left: 0;
+}
+.start-learning .class{
+  background-color: hsla(200, 11%, 60%, .3);
+  text-align: center;
+}
+.start-learning .container .class  {
+  margin-top: 8px;
+  margin-bottom: 8px;
+    width: 100%;
+}
+.start-learning .class h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.start-learning img{
+  display: none;
+}
+.start-learning p{
+  display: none;
+}
+.start-learning span{
+  display: none;
+}
+.articles {
+  display: none;
+}
+.thesis-exhibit .container .video {
+  align-items: center;
+}
+.video{
+  width: 100%;
+}
+}
 /*header*/
 
 header {
