@@ -56,13 +56,16 @@ h3, h4 {
 margin-top: 64px;
 transition: none;
 }
+.offering {
+   transition: none !important;
+}
 }
 @media only screen and (max-width: 720px) {
 .start-learning .container, h2 {
   background-color: white;
 }
 .container .class .text {
-  margin-left: 0;
+  padding-bottom: 0;
 }
 .start-learning .class{
   background-color: hsla(200, 11%, 60%, .3);
@@ -77,6 +80,9 @@ transition: none;
   margin-top: 32px;
   margin-bottom: 8px;
 }
+.start-learning .class h3 {
+padding: 16px 16px 24px 16px;
+}
 .start-learning img{
   display: none;
 }
@@ -89,11 +95,8 @@ transition: none;
 .articles {
   display: none;
 }
-.thesis-exhibit .container .video {
-  align-items: center;
-}
-.video{
-  width: 100%;
+.terms-and-privacy {
+  display: none;
 }
 }
 /*header*/
@@ -250,6 +253,9 @@ display: flex;
   height: auto;
   margin: 0 16px 16px 16px;
 }
+.offering span {
+  color: #39CCCC;
+}
 .offering p, .article p {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -304,8 +310,8 @@ display: flex;
   margin: 0px 24px 24px 24px;
 }
 .thesis-exhibit .container video {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .thesis-exhibit .container .articles .article {
   display: flex;
