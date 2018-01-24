@@ -76,7 +76,6 @@ h3, h4 {
 .keep-practicing .container .container-description .offerings .offering {
 margin-top: 64px;
 padding: 8px 8px 8px 8px;
-
 }
 }
 @media only screen and (max-width: 720px) {
@@ -126,7 +125,7 @@ header {
   width: 100%;
   padding: 0 24px;
   position: fixed;
-  background-color: white;
+  background-color: hsl(205, 34%, 60%);
   z-index: 10;
 }
 .header-title {
@@ -138,7 +137,7 @@ header {
   font-size: 1.6em;
 }
 .header-title h5:nth-child(2n+2) {
-  color: hsla(200, 11%, 60%, .3);
+  color: hsl(200, 11%, 81%);
 }
 .nav-container {
   width: 100%;
@@ -196,7 +195,7 @@ nav:nth-child(4n+1){
   margin: 0 24px 32px 0;
 }
 .cta {
-  background-color: darkgray;
+  background-color: hsl(205, 34%, 60%);
   width: 20em;
   text-align: center;
   padding-top: 8px;
