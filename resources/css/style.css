@@ -337,6 +337,10 @@ display: flex;
   width: 350px;
   text-align: justify;
 }
+.thesis-exhibit h3 {
+  margin-top: 1.5em;
+  margin-bottom: .8em;
+}
 .articles .article img {
   width: 35%;
   height: auto;
